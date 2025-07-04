@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Приглашение</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f8ff;
+        text-align: center;
+        padding: 50px;
+        background-image: url(./img/IMG_4211.WEBP);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+      }
+
+      h1 {
+        color: white;
+      }
+
+      p {
+        color: white;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #32cd32;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #28a745;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Приглашаю отпраздновать ДР под солнцем в бассейне Лагуна!</h1>
+    <p>
+      на ул.Тракторная 48Д, 6 июля, в воскресенье! Мы можем поехать к
+      открытию,чтобы занять лежаки, к 10.00ч!
+    </p>
+
+    <button onclick="askInvitation()">Идешь?</button>
+
+    <script>
+      function askInvitation() {
+        let answer = prompt("да/нет");
+        if (answer && answer.trim().toUpperCase() === "ДА") {
+          alert("Ураааааа!");
+        } else {
+          alert("А что тебе еще делать в выходной? Присоединяйся!");
+        }
+      }
+    </script>
+  </body>
+</html>
