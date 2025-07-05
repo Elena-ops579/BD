@@ -19,12 +19,23 @@
 
       h1 {
         color: #5fd6df;
+        /* Тень текста */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        /* Контур текста (поддерживается в WebKit-браузерах) */
+        -webkit-text-stroke: 1px #000;
+        /* Для Firefox и других браузеров можно использовать SVG или оставить без */
+        font-size: 24px;
+        line-height: 1.4;
       }
 
       p {
         font-size: larger;
         font-weight: bold;
         color: rgb(4, 60, 80);
+        /* Тень текста */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        /* Контур текста (поддерживается в WebKit-браузерах) */
+        -webkit-text-stroke: 0.5px #000;
       }
 
       button {
@@ -35,6 +46,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        margin-top: 20px;
       }
       button:hover {
         background-color: #28a745;
@@ -43,7 +55,7 @@
   </head>
   <body>
     <h1>
-      Приглашаю тебя перекусиль и съесть торт 5 июля у родителей ~15:00! А 6
+      Приглашаю тебя перекусить и съесть торт 5 июля у родителей ~15:00! И 6
       июля погреться под солнцем в бассейне Лагуна!
     </h1>
     <p>
